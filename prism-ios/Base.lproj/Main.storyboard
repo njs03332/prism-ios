@@ -38,7 +38,6 @@
                                 <rect key="frame" x="303" y="81" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="MyPage"/>
-
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5Z-Fi-I3m">
                                 <rect key="frame" x="162" y="582" width="51" height="30"/>
@@ -68,7 +67,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="questionLabel" destination="bme-YI-wVa" id="x6V-f7-0L8"/>
-                                            <segue destination="Pwa-xb-BFa" kind="show" id="bcE-ZJ-wlH"/>
+                                            <segue destination="r6o-78-gdk" kind="show" id="kVb-F5-htz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,31 +92,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="VMl-oC-Grf">
-            <objects>
-                <viewController id="Pwa-xb-BFa" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4md-Ov-JEe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="질문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-ox-Yrd">
-                                <rect key="frame" x="172" y="323" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ReU-SW-sqd"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="1vf-sy-yee"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hL2-VL-Iwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="670" y="35"/>
         </scene>
         <!--Answer View Controller-->
         <scene sceneID="QHh-I3-Nwa">
@@ -169,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4Z-Ma-0Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1536.8" y="-592.35382308845578"/>
+            <point key="canvasLocation" x="876" y="134"/>
         </scene>
     </scenes>
 </document>
