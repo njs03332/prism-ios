@@ -14,6 +14,7 @@
 		6EE19C8421A6E69B00AC99DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EE19C8221A6E69B00AC99DA /* LaunchScreen.storyboard */; };
 		6EE19C8F21A6E69B00AC99DA /* prism_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE19C8E21A6E69B00AC99DA /* prism_iosTests.swift */; };
 		6EE19C9A21A6E69B00AC99DA /* prism_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE19C9921A6E69B00AC99DA /* prism_iosUITests.swift */; };
+		6EE19CA821A6F7F400AC99DA /* AnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE19CA721A6F7F400AC99DA /* AnswerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6EE19C9521A6E69B00AC99DA /* prism-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "prism-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE19C9921A6E69B00AC99DA /* prism_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prism_iosUITests.swift; sourceTree = "<group>"; };
 		6EE19C9B21A6E69B00AC99DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EE19CA721A6F7F400AC99DA /* AnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				6EE19C8021A6E69B00AC99DA /* Assets.xcassets */,
 				6EE19C8221A6E69B00AC99DA /* LaunchScreen.storyboard */,
 				6EE19C8521A6E69B00AC99DA /* Info.plist */,
+				6EE19CA721A6F7F400AC99DA /* AnswerViewController.swift */,
 			);
 			path = "prism-ios";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE19CA821A6F7F400AC99DA /* AnswerViewController.swift in Sources */,
 				6EE19C7C21A6E69A00AC99DA /* ViewController.swift in Sources */,
 				6EE19C7A21A6E69A00AC99DA /* AppDelegate.swift in Sources */,
 			);
