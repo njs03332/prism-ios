@@ -36,6 +36,8 @@ class ViewController: UIViewController, UITableViewDataSource {
         print(cell.questionLabel.text)
         return cell
     }
+    
+    
 
 
 }
