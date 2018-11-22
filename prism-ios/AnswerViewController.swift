@@ -15,8 +15,11 @@ class AnswerViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var answerTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(question)
         // Do any additional setup after loading the view.
+        
+        print(question)
+        questionLabel.text = question
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

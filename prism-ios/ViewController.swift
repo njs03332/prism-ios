@@ -8,17 +8,23 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
-
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    @IBOutlet weak var questionBottomLabel: UILabel!
+    @IBOutlet weak var answerButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     var questions = [String]()
+    var question = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        questionBottomLabel.isHidden = true
+        answerButton.isHidden = true
+        questions = ["오늘 하루는 어땠어요?", "가장 좋아하는 색깔", "지금 갑자기 하고 싶은 것", "지루함", "하고 싶지만 하지 못한 말은?"]
         
-        questions = ["질문1", "질문2", "질문3", "질문4", "질문5"]
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questions.count
@@ -33,12 +39,28 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    //this function is called when specific row is selected!
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        question = questions[tableView.indexPathForSelectedRow!.row]
+        questionBottomLabel.text = question
+        answerButton.isHidden = false
+        questionBottomLabel.isHidden = false
+        
+    }
+    
+    @IBAction func clickAnswerButton(_ sender: Any) {
+        answerButton.isHidden = true
+        questionBottomLabel.isHidden = true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
-            (segue.destination as! AnswerViewController).question = questions[tableView.indexPathForSelectedRow!.row]
+            (segue.destination as! AnswerViewController).question = question
         }
     }
+    
+    
 
-
+    
 }
 
