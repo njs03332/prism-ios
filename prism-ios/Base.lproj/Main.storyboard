@@ -67,7 +67,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="questionLabel" destination="bme-YI-wVa" id="x6V-f7-0L8"/>
-                                            <segue destination="r6o-78-gdk" kind="show" id="kVb-F5-htz"/>
+                                            <segue destination="r6o-78-gdk" kind="show" identifier="showDetail" id="kVb-F5-htz"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -88,6 +88,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZHW-Nr-JRz"/>
+                    <connections>
+                        <outlet property="tableView" destination="Hex-n5-bBY" id="Wj3-aA-90Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +142,7 @@
                     </view>
                     <connections>
                         <outlet property="answerTextField" destination="Mgn-VA-Wxy" id="sxg-BG-PCW"/>
+                        <outlet property="questionLabel" destination="x26-Pv-oZg" id="IvP-mi-T87"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4Z-Ma-0Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>

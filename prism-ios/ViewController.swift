@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
     var questions = [String]()
     
     override func viewDidLoad() {
@@ -17,13 +18,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         // Do any additional setup after loading the view, typically from a nib.
         
         questions = ["질문1", "질문2", "질문3", "질문4", "질문5"]
-        
-        print("hey")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("hi")
-        print(questions.count)
         return questions.count
     }
     
@@ -33,11 +30,14 @@ class ViewController: UIViewController, UITableViewDataSource {
         let question = questions[indexPath.row]
 
         cell.questionLabel.text = question
-        print(cell.questionLabel.text)
         return cell
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            (segue.destination as! AnswerViewController).question = questions[tableView.indexPathForSelectedRow!.row]
+        }
+    }
 
 
 }

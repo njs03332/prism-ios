@@ -10,10 +10,12 @@ import UIKit
 
 class AnswerViewController: UIViewController, UITextFieldDelegate {
 
+    var question = String()
+    @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(question)
         // Do any additional setup after loading the view.
     }
     
