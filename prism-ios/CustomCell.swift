@@ -15,11 +15,18 @@ class CustomCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+//        questionLabel.highlightedTextColor = UIColor(purple)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
+        if selected == true {
+            questionLabel.isHighlighted = true
+        } else {
+            questionLabel.isHighlighted = false
+        }
         // Configure the view for the selected state
     }
 
